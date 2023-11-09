@@ -592,9 +592,9 @@ export function fetchGitHubTreeData(sha: string, config: Config) {
         }
       ).then(x => x.json());
     })
-    .then((res: { tree: (TreeEntry & { url: string })[] }) =>
+    .then((res: { tree: (TreeEntry & { url: string; size?: number })[] }) =>
       hydrateTreeCacheWithEntries(
-        res.tree.map(({ url, ...rest }) => rest as TreeEntry)
+        res.tree.map(({ url, size, ...rest }) => rest as TreeEntry)
       )
     );
   treeCache.set(sha, promise);
