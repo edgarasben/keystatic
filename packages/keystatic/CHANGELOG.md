@@ -1,5 +1,14 @@
 # @keystatic/core
 
+## 0.2.5
+
+### Patch Changes
+
+- bd28cfd4: Collection table: hide "status" column for default branch.
+- Updated dependencies [bd28cfd4]
+- Updated dependencies [0e81263b]
+  - @keystar/ui@0.4.5
+
 ## 0.2.4
 
 ### Patch Changes

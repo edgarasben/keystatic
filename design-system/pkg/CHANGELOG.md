@@ -1,5 +1,13 @@
 # @keystar/ui
 
+## 0.4.5
+
+### Patch Changes
+
+- bd28cfd4: Fix `transitionProperty` typo in `ActionButton` styles.
+- 0e81263b: Refactor `ProgressCircle` — split animation properties across
+  elements to fix transform-origin issue in safari.
+
 ## 0.4.4
 
 ### Patch Changes
